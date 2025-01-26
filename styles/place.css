@@ -30,5 +30,135 @@ header {
     text-align: center;
     color: var(--header-text-color);
     padding: 20px;
-    margin: 0 0 20px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--header-text-color);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    margin: 0 0 -8px 0;
+}
+
+.first {
+    text-align: right;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.second {
+    text-align: left;
+    margin-left: 5px;
+    line-height: 1.5;
+}
+
+/* Media query para pantallas de tamaño pequeño */
+@media (max-width: 770px) {
+    .hero img {
+        height: 500px;
+    }
+
+    .data,
+    .weather {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9); 
+        color: white;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0 10px 0;
+    }
+
+    .data-head,
+    .weather-head {
+        align-items: center;
+    }
+
+    h2 {
+        color: black;
+        padding: 0 0 5px 0;
+        font-size: 28px;
+    }
+
+    .data p,
+    .weather p {
+        color: black;
+    }
+
+    .weather img {
+        width: 80px;
+        margin-left: 5px;
+    }
+
+    .weather-list {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 770px) {
+    .data {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        background-color: rgba(255, 255, 255, 0.9); 
+        color: white;
+        padding: 20px;
+    }
+
+    .data-head {
+        display: flex;
+        background-color: rgba(36, 163, 53, 0.9);
+        padding: 10px 0 10px 40px;
+        margin: 0 0 10px -40px;
+        align-items: center;
+    }
+
+    .data img {
+        width: 60px;
+        margin-left: 5px;
+    }
+
+    .weather {
+        position: absolute;
+        top: 570px;
+        right: 150px;
+        background-color: rgba(255, 255, 255, 0.9); 
+        color: white;
+        padding: 20px;
+    }
+
+    .weather-head {
+        display: flex;
+        background-color: rgba(36, 163, 53, 0.9);
+        padding: 0 0 0 40px;
+        margin: 0 0 10px -40px;
+        align-items: center;
+    }
+
+    .weather img {
+        width: 60px;
+        margin: 10px 10px 3px 10px;
+    }
+
+    .weather p {
+        color: black;
+    }
+
+    .weather-list {
+        display: flex;
+        gap: 1px;
+    }
 }

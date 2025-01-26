@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Hernan Singh. A guide to dynamic web development and fundamental practices.">
     <meta name="author" content="Hernan Singh">
-    <title>place activity - hernan singh</title>
-    <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js" defer></script>
+    <title>Place Activity - Hernan Singh</title>
+    <link rel="stylesheet" href="styles/place.min.css">
+    <script src="scripts/place.min.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,16 +15,66 @@
     </header>
 
     <main>
-        <div class="hero">
+        <section class="hero">
             <picture>
-                <source srcset="images/lagos-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/lagos-medium.webp" media="(min-width: 500px)">
-                <img src="images/lagos-small.webp" alt="NIGERIA">
+                <source srcset="images/glaciar-argentina.webp" media="(min-width: 1000px)">
+                <source srcset="images/glaciar.webp" media="(min-width: 500px)">
+                <img src="images/glaciar.webp" alt="Glacier in Argentina landscape">
             </picture>
-        </div>
+        </section>
+
+        <section class="data">
+            <header class="data-head">
+                <h2>Data</h2>
+            </header>
+            <div class="weather-list">
+                <div class="first">
+                    <p>Area: </p>
+                    <p>Population: </p>
+                    <p>Capital: </p>
+                    <p>Languages: </p>
+                    <p>Currency: </p>
+                    <p>Time Zone: </p>
+                    <p>Calling Code: </p>
+                    <p>Internet TLD: </p>
+                </div>
+                <div class="second">
+                    <p>2,780,400 sq km</p>
+                    <p>45,376,763</p>
+                    <p>Buenos Aires</p>
+                    <p>Spanish</p>
+                    <p>Argentine Peso (ARS)</p>
+                    <p>UTC-03:00</p>
+                    <p>+54</p>
+                    <p>.ar</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="weather">
+            <header class="weather-head">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Weather Icon" width="50" height="50">
+            </header>
+            <div class="weather-list">
+                <div class="first">
+                    <p>Temperature:</p>
+                    <p>Conditions:</p>
+                    <p>Wind:</p>
+                    <p>Windchill:</p>
+                </div>
+                <div class="second">
+                    <p>25°C</p>
+                    <p>Partly Cloudy</p>
+                    <p>10 km/h</p>
+                    <p id="windchill"></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Hernan Singh, Córdoba Argentina.</p>
+        <p>&copy; <span id="currentyear"></span> Hernan Singh, Córdoba, Argentina.</p>
         <p id="lastModified"></p>
     </footer>
 </body>
