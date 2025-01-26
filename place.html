@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Hernan Singh. A guide to dynamic web development and fundamental practices.">
     <meta name="author" content="Hernan Singh">
-    <title>Place Activity - Hernan Singh</title>
-    <link rel="stylesheet" href="styles/place.min.css">
-    <script src="scripts/place.min.js" defer></script>
+    <title>place activity - hernan singh</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,18 +15,18 @@
     </header>
 
     <main>
-        <section class="hero">
+        <div class="hero">
             <picture>
                 <source srcset="images/glaciar-argentina.webp" media="(min-width: 1000px)">
                 <source srcset="images/glaciar.webp" media="(min-width: 500px)">
-                <img src="images/glaciar.webp" alt="Glacier in Argentina landscape">
+                <img src="images/glaciar.webp" alt="Argentina">
             </picture>
-        </section>
-
-        <section class="data">
-            <header class="data-head">
-                <h2>Data</h2>
-            </header>
+        </div>
+        <div class="data">
+            <section class="data-head">
+                <h2>Data</h2> 
+                <!-- Data details -->
+            </section>
             <div class="weather-list">
                 <div class="first">
                     <p>Area: </p>
@@ -49,13 +49,14 @@
                     <p>.ar</p>
                 </div>
             </div>
-        </section>
+        </div>
     
-        <section class="weather">
-            <header class="weather-head">
-                <h2>Weather</h2>
-                <img src="images/weather.svg" alt="Weather Icon" width="50" height="50">
-            </header>
+        <!-- Weather Section -->
+        <div class="weather">
+            <section class="weather-head">
+                <h2>Weather</h2> 
+                <span><img src="images/weather.svg" alt="Weather Icon"></span>
+            </section>
             <div class="weather-list">
                 <div class="first">
                     <p>Temperature:</p>
@@ -70,11 +71,11 @@
                     <p id="windchill"></p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </main>    
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Hernan Singh, Córdoba, Argentina.</p>
+        <p>&copy; <span id="currentyear"></span> Hernan Singh, Córdoba Argentina.</p>
         <p id="lastModified"></p>
     </footer>
 </body>
