@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Lobster&display=swap');
+
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #f9f9f9;
+    --accent-color: #0b758a;
+    --text-color: #333333;
+    --header-text-color: #ffffff;
+    --font-family: 'Open Sans', sans-serif;
+    --heading-font-family: 'Open Sans', cursive;
+    --line-height: 1.6;
+    --header-font-size: 36px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--header-text-color);
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+header h1 {
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-size: var(--header-font-size);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2d2d2d;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#menu {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10px 0;
+}
+
+.hide {
+    display: none;
+}
+
+#menu::before {
+    content: "";
+    background-image: url('../images/temples/Icons/lista.png');
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding: 0 0 10px 0;
+}
+
+#menu.open::before {
+    content: "";
+    background-image: url('../images/temples/Icons/cancelar.png');
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding: 0;
+}
+
+/* Body */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Filters */
+.filter-title {
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-size: 24px;
+}
+
+.btn-filter {
+    padding: 15px 35px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: #000;
+    border: #000 1px solid;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-filter:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+.btn-filter:active {
+    background-color: var(--accent-color);
+}
+
+.buttons-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.figure{
+    background-color: #eeeeee !important;
+    border: #cacaca 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card-body {
+    padding: 0 0 15px 0;
+}
+
+.card-body h3 {
+    font-size: 22px;
+}
+
+.card-body p {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--header-text-color);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.figure {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Desvanecimiento suave */
+}
+
+.figure.visible {
+    opacity: 1; /* Mostrar los elementos cuando tengan la clase 'visible' */
+}
