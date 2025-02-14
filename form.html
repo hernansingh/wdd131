@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Hernan Singh. A guide to dynamic web development and fundamental practices.">
+    <meta name="author" content="Hernan Singh">
+    <title>Form activity - Hernan Singh</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+<form action="review.html" method="get" id="reviewForm">
+
+    <label for="product">Product Name</label>
+    <select id="productSelect" name="product" name="product" required>
+    <option value="" disabled selected>Select a Product ...</option>
+    </select>
+    
+    <label for="rating">Overall Rating:</label>
+    <div class="rating-container">
+
+        <div class="rating-element">
+            <input type="radio" id="rating1" name="rating" value="1" required>
+            <label for="rating1">☆</label>
+        </div>
+
+        <div class="rating-element">
+            <input type="radio" id="rating2" name="rating" value="2">
+            <label for="rating2">☆☆</label>
+        </div>
+
+        <div class="rating-element">
+            <input type="radio" id="rating3" name="rating" value="3">
+            <label for="rating3">☆☆☆</label>
+        </div>
+
+        <div class="rating-element">
+            <input type="radio" id="rating4" name="rating" value="4">
+            <label for="rating4">☆☆☆☆</label>
+        </div>
+
+        <div class="rating-element">
+            <input type="radio" id="rating5" name="rating" value="5">
+            <label for="rating5">☆☆☆☆☆</label>
+        </div>
+    </div>
+
+    <label for="installationDate">Date of Installation</label>
+    <input type="date" id="installationDate" name="installationDate" required>
+
+    <label>Useful Features</label>
+    <div class="checkbox-container">
+        <div class="checkbox-individual">
+        <input type="checkbox" id="feature1" name="usefulFeatures" value="Feature 1">
+        <label for="feature1">Feature 1</label>
+        </div>
+        <div class="checkbox-individual">
+        <input type="checkbox" id="feature2" name="usefulFeatures" value="Feature 2">
+        <label for="feature2">Feature 2</label>
+        </div>
+        <div class="checkbox-individual">
+        <input type="checkbox" id="feature3" name="usefulFeatures" value="Feature 3">
+        <label for="feature3">Feature 3</label>
+        </div>
+    </div>
+
+    <label for="review">Written Review</label>
+    <textarea id="review" name="review"></textarea>
+
+    <label for="userName">User Name:</label>
+    <input type="text" id="userName" name="userName">
+
+    <input type="submit" value="Submit Review">
+</form>
+
+<div class="counter">
+    <p>Numbers of form submitted:</p>
+    <h2 id="numbers-of-intents"></h2>
+</div>
+
+<footer>
+    <p>
+        &copy; <span id="currentyear"></span> Hernan Singh, Córdoba Argentina.
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>

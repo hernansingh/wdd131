@@ -96,7 +96,7 @@ const temples = [
 const templeContainer = document.getElementById('temples-container');
 
 function createElementCard(filteredTemples) {
-    templeContainer.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevos templos
+    templeContainer.innerHTML = '';
     filteredTemples.forEach((temple) => {
         const card = document.createElement('figure');
         card.classList.add('figure');

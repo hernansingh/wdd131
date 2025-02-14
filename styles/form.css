@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #f9f9f9;
+    --accent-color: #0b758a;
+    --text-color: #333333;
+    --header-text-color: #ffffff;
+    --font-family: 'Open Sans', sans-serif;
+    --heading-font-family: 'Open Sans', cursive;
+    --line-height: 1.6;
+    --header-font-size: 36px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+form label, form select {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="date"],
+form textarea, form select  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px rgba(11, 118, 138, 0.5);
+    outline: none;
+}
+
+/* Radio Buttons (Rating Stars) */
+form .rating-container {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.rating-element label {
+    font-size: 24px;
+    color: #cccccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+/* Checkboxes (Useful Features) */
+form .checkbox-container {
+    display: flex;
+    gap: 20px;
+    padding: 0 0 20px 0 ;
+}
+
+.rating-element{
+    display: flex;
+}
+
+.checkbox-individual{
+    display: flex;
+}
+
+.checkbox-individual label{
+    padding: 0 0 0 5px;
+    margin-bottom: 0px;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--header-text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    .rating-element label {
+        font-size: 20px;
+    }
+
+    form input[type="submit"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--header-text-color);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.counter p{
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.counter h2{
+    text-align: center;
+    font-size: 25px;    
+}
+
+.counter{
+    padding: 30px;
+}
