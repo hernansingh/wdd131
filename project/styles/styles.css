@@ -19,6 +19,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     font-family: var(--heading-font-family);
     line-height: 1.6;
@@ -486,6 +490,21 @@ button:hover{
 
     .space-top{
         padding-top: 100px;
+    }
+
+    .different-button{
+        background-color: var(--secondary-color) !important;
+        color: var(--primary-color);
+    }
+
+    .different-button:hover{
+        background-color: var(--primary-color);
+        color: var(--secondary-color) !important;
+    }
+
+    .text-decoration-none{
+        color: var(--primary-color) !important;
+        text-decoration: none;
     }
 
 }
